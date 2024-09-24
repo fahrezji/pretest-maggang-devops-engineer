@@ -12,6 +12,64 @@
 
 Cara pengerjaan, silahkan update file ini tulis jawabanya di bawah ini
 
+1. DevOps adalah sebuah pendekatan dalam pengembangan perangkat lunak yang menggabungkan 
+   praktik pengembangan (development) dan operasi (operations). Tujuan utama DevOps adalah
+   untuk mempercepat siklus pengembangan perangkat lunak, meningkatkan kualitas, 
+   dan meningkatkan kolaborasi antara tim pengembangan dan operasi.
+
+2. Infrastruktur dalam konteks teknologi informasi merujuk pada komponen fisik dan virtual
+   yang mendukung operasi sistem informasi. Ini mencakup:
+
+   Perangkat keras: Server, jaringan, penyimpanan, perangkat periferal.
+   Perangkat lunak: Sistem operasi, database, aplikasi middleware.
+   Jaringan: Konektivitas antara berbagai komponen infrastruktur.
+   Data: Informasi yang disimpan dan diproses oleh sistem.
+
+   Contoh infrastruktur: pusat data, cloud computing, jaringan area lokal (LAN).
+
+3. Server adalah komputer yang menyediakan layanan kepada klien melalui jaringan.
+
+   Implementasi server:
+
+   Server web: Menyediakan halaman web (misalnya, Apache, Nginx).
+   Server database: Menyimpan dan mengelola data (misalnya, MySQL, PostgreSQL).
+
+   Contoh penggunaan server:
+
+   Website: Server web melayani permintaan halaman web dari browser pengguna.
+   Aplikasi e-commerce: Server aplikasi memproses transaksi pembelian dan server database 
+   menyimpan informasi pelanggan dan produk.
+   Layanan cloud: Server menyediakan berbagai layanan komputasi, penyimpanan, dan jaringan 
+   melalui internet.
+
+4. Server dibutuhkan dalam pengembangan perangkat lunak karena:
+
+   Lingkungan pengembangan: Server menyediakan lingkungan untuk menguji dan mengembangkan 
+   aplikasi sebelum dideploy ke produksi.
+   Hosting aplikasi: Server digunakan untuk menghosting aplikasi yang sudah jadi agar dapat
+   diakses oleh pengguna.
+   Penyimpanan data: Server digunakan untuk menyimpan data aplikasi, seperti data pengguna,
+   konfigurasi, dan log.
+
+5. Virtualisasi: Teknologi yang memungkinkan menjalankan beberapa sistem operasi atau beberapa
+   salinan dari sistem operasi yang sama pada perangkat keras tunggal.
+   Container: Unit pengemasan perangkat lunak yang ringan dan independen. Container berisi semua
+   yang dibutuhkan aplikasi untuk berjalan, termasuk kode, runtime, sistem operasi, dan pustaka.
+
+6. Portabilitas: Container dapat berjalan di berbagai platform tanpa modifikasi.
+   Efisiensi: Container lebih ringan dan lebih cepat untuk di-start dibandingkan mesin virtual.
+   Skalabilitas: Container dapat dengan mudah di-skalakan untuk memenuhi permintaan yang berubah-ubah.
+   Kemudahan pengelolaan: Banyak alat yang tersedia untuk mengelola container, seperti Docker dan Kubernetes.
+
+7. Orchestration container system adalah perangkat lunak yang digunakan untuk mengotomatiskan penyebaran,
+   pengelolaan, dan scaling container. Sistem ini membantu mengelola lingkungan container yang kompleks 
+   dengan banyak container yang berjalan secara bersamaan.
+
+   Contoh orchestration container system:
+   Kubernetes: Platform open-source yang paling populer untuk mengelola container.
+
+   
+
 ## Task 1 (Virtualization)
 
 - Buatlah sebuah VM dengan kententuan
