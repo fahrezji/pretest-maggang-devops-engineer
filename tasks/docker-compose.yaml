@@ -1,0 +1,54 @@
+version: '3.9'
+services:
+  postgres:
+    image: postgres:14.2
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=prod_password
+      - POSTGRES_USER=example
+      - POSTGRES_DB=example
+    networks:
+      - backend
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+
+  spring-boot:
+    image: dimmaryanto93/udemy-springboot-app:latest
+    restart: always
+    environment:
+      - DATABASE_HOST=postgres
+      - DATABASE_PORT=5432
+      - DATABASE_NAME=example
+      - DATABASE_USER=example
+      - DATABASE_PASSWORD=prod_password
+      - APPLICATION_PORT=8080
+    networks:
+      - backend
+      - frontend
+    depends_on:
+      - postgres
+
+  angular:
+    image: dimmaryanto93/udemy-angular-app:latest
+    restart: always
+    ports:
+      - "80:80"
+    environment:
+      - APPLICATION_PORT=80
+      - NGINX_ROOT_DOCUMENT=/var/www/html
+      - BACKEND_HOST=spring-boot
+      - BACKEND_PORT=8080
+      - BACKEND_CONTEXT_PATH=/
+    networks:
+      - frontend
+    depends_on:
+      - spring-boot
+
+volumes:
+  pg_data:
+
+networks:
+  backend:
+  frontend:
